@@ -10,7 +10,7 @@ Test primul proiect inca nu stiu ce fac
 - npm: 11.19.1
 - Visual Studio Code: 1.142.0
 
-## Informatii student
+## Informații Student
 
 Grupa: A
 
