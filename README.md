@@ -9,3 +9,7 @@ Test primul proiect inca nu stiu ce fac
 - Node.js: v24.22.0
 - npm: 11.19.1
 - Visual Studio Code: 1.142.0
+
+## Informatii student
+
+Grupa: A
