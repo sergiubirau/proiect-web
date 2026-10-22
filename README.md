@@ -13,3 +13,9 @@ Test primul proiect inca nu stiu ce fac
 ## Informatii student
 
 Grupa: A
+
+## Idei pentru proiect
+
+1. Website pentru SC MARCOR Electro SRL
+2. Realizare formular contact
+3. Adaugare portofoliu cu fotografii ale lucrarilor
