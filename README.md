@@ -25,3 +25,11 @@ Grupa: A
 Am modificat fisierul `README.md` fara sa fac commit, apoi am folosit comanda `git diff README.md` pentru a vedea exact ce modificari am facut fata de versiunea inregistrata anterior.
 
 Cu ajutorul comenzii `git restore README.md` am anulat modificarile, iar prin `git status` am verificat ca fisierul a revenit la versiunea initiala si nu mai exista modificari neinregistrate.
+
+## Descrierea proiectului
+
+Tema proiectului este realizarea unui website de prezentare pentru firma MARCOR Electro SRL, specializata in instalatii electrice.
+
+Site-ul va prezenta serviciile oferite de firma, lucrarile realizate si modalitatile de contact.
+
+Pe parcursul semestrului, website-ul va fi dezvoltat prin adaugarea stilurilor CSS, functionalitatilor JavaScript si a celorlalte elemente studiate la laborator.
