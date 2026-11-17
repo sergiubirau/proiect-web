@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reguli de validare</title>
+  </head>
+  <body>
+    <h1>Formular de comandă</h1>
+
+    <form action="" method="get">
+      <p>
+        <label for="telefon">Telefon mobil:</label>
+        <input
+          type="tel"
+          id="telefon"
+          name="telefon"
+          pattern="07[0-9]{8}"
+          maxlength="10"
+          title="Introduceți 10 cifre, începând cu 07."
+          required
+        />
+      </p>
+
+      <p>
+        <label for="cod-postal">Cod poștal:</label>
+        <input
+          type="text"
+          id="cod-postal"
+          name="cod_postal"
+          pattern="[0-9]{6}"
+          maxlength="6"
+          title="Introduceți exact 6 cifre."
+          required
+        />
+      </p>
+
+      <p>
+        <label for="cod-promo">Cod promoțional:</label>
+        <input
+          type="text"
+          id="cod-promo"
+          name="cod_promo"
+          pattern="[A-Z0-9]{6}"
+          maxlength="6"
+          title="Exact 6 caractere: litere mari și cifre."
+        />
+      </p>
+
+      <p>
+        <label for="ora">Ora livrării:</label>
+        <input
+          type="time"
+          id="ora"
+          name="ora"
+          min="08:00"
+          max="19:00"
+          required
+        />
+      </p>
+
+      <p>
+        <label for="bucati">Număr de bucăți:</label>
+        <input
+          type="number"
+          id="bucati"
+          name="bucati"
+          min="1"
+          max="12"
+          step="1"
+          value="1"
+          required
+        />
+      </p>
+
+      <p>
+        <button type="submit">Trimite comanda</button>
+        <button type="reset">Resetează</button>
+      </p>
+    </form>
+
+    <h2>Rezultatele testelor de validare</h2>
+
+    <table border="1">
+      <caption>
+        Valori de test din Lucrarea 2
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Câmp</th>
+          <th scope="col">Valoare încercată</th>
+          <th scope="col">Rezultat așteptat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Telefon mobil</th>
+          <td>0721234567</td>
+          <td>Acceptat</td>
+        </tr>
+        <tr>
+          <th scope="row">Telefon mobil</th>
+          <td>0821234567</td>
+          <td>Respins</td>
+        </tr>
+        <tr>
+          <th scope="row">Telefon mobil</th>
+          <td>072123456</td>
+          <td>Respins</td>
+        </tr>
+        <tr>
+          <th scope="row">Cod poștal</th>
+          <td>410087</td>
+          <td>Acceptat</td>
+        </tr>
+        <tr>
+          <th scope="row">Cod poștal</th>
+          <td>41008A</td>
+          <td>Respins</td>
+        </tr>
+        <tr>
+          <th scope="row">Cod promoțional</th>
+          <td>AROMA1</td>
+          <td>Acceptat</td>
+        </tr>
+        <tr>
+          <th scope="row">Cod promoțional</th>
+          <td>aroma1</td>
+          <td>Respins</td>
+        </tr>
+        <tr>
+          <th scope="row">Cod promoțional</th>
+          <td>(gol)</td>
+          <td>Acceptat</td>
+        </tr>
+        <tr>
+          <th scope="row">Ora livrării</th>
+          <td>07:30</td>
+          <td>Respins</td>
+        </tr>
+        <tr>
+          <th scope="row">Număr de bucăți</th>
+          <td>13</td>
+          <td>Respins</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abonare la newsletter</title>
+  </head>
+  <body>
+    <h1>Abonare la newsletter</h1>
+
+    <form action="" method="get">
+      <p>
+        <label for="email">Adresa de e-mail:</label>
+        <input type="email" id="email" name="email" required />
+      </p>
+
+      <fieldset>
+        <legend>Cât de des vrei să primești mesaje?</legend>
+
+        <p>
+          <input
+            type="radio"
+            id="saptamanal"
+            name="frecventa"
+            value="saptamanal"
+            checked
+          />
+          <label for="saptamanal">Săptămânal</label>
+        </p>
+
+        <p>
+          <input type="radio" id="lunar" name="frecventa" value="lunar" />
+          <label for="lunar">Lunar</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Ce te interesează?</legend>
+
+        <p>
+          <input type="checkbox" id="cafea" name="interese" value="cafea" />
+          <label for="cafea">Cafea</label>
+        </p>
+
+        <p>
+          <input
+            type="checkbox"
+            id="deserturi"
+            name="interese"
+            value="deserturi"
+          />
+          <label for="deserturi">Deserturi</label>
+        </p>
+
+        <p>
+          <input
+            type="checkbox"
+            id="evenimente"
+            name="interese"
+            value="evenimente"
+          />
+          <label for="evenimente">Evenimente</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Abonează-mă</button>
+      </p>
+    </form>
+  </body>
+</html>

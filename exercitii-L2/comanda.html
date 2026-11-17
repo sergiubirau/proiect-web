@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comandă rapidă</title>
+  </head>
+  <body>
+    <h1>Comandă rapidă</h1>
+
+    <form action="comanda.html" method="post">
+      <!-- Corectare 1: Am adăugat eticheta pentru nume. -->
+      <!-- Corectare 2: Am adăugat atributul name. -->
+      <p>
+        <label for="nume">Nume:</label>
+        <input type="text" id="nume" name="nume" required />
+      </p>
+
+      <!-- Corectare 3: Am asociat eticheta cu id-ul. -->
+      <!-- Corectare 4: Am schimbat tipul în email. -->
+      <p>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+      </p>
+
+      <!-- Corectare 5: Am adăugat eticheta telefonului. -->
+      <!-- Corectare 6: Am schimbat tipul în tel. -->
+      <p>
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" name="telefon" />
+      </p>
+
+      <!-- Corectare 7: Am grupat opțiunile în fieldset. -->
+      <fieldset>
+        <legend>Mărime:</legend>
+
+        <!-- Corectare 8: Am folosit același name
+                 pentru ambele opțiuni radio. -->
+        <!-- Corectare 9: Am adăugat etichete
+                 asociate fiecărei opțiuni. -->
+
+        <p>
+          <input type="radio" id="mic" name="marime" value="mic" required />
+          <label for="mic">Mic</label>
+        </p>
+
+        <p>
+          <input type="radio" id="mare" name="marime" value="mare" />
+          <label for="mare">Mare</label>
+        </p>
+      </fieldset>
+
+      <!-- Corectare 10: Am înlocuit input cu textarea. -->
+      <!-- Corectare 11: Am corectat id-ul mesajului
+             pentru a corespunde etichetei. -->
+      <p>
+        <label for="mesaj">Mesaj:</label>
+        <textarea id="mesaj" name="mesaj" rows="4" cols="40"></textarea>
+      </p>
+
+      <!-- Corectare 12: Am mutat butonul în formular
+             și am specificat type="submit". -->
+      <p>
+        <button type="submit">Trimite</button>
+      </p>
+    </form>
+  </body>
+</html>
