@@ -1,0 +1,33 @@
+.card {
+  width: 260px;
+  padding: 20px;
+  border: 2px solid #cccccc;
+  margin: 16px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pret {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card.recomandat {
+  border-color: #d4a017;
+  background-color: #fff8e7;
+}
+
+/*
+Calculul latimii totale a unui card:
+
+Fara box-sizing: border-box:
+260px + 40px padding + 4px border + 32px margin
+= 336px
+
+Cu box-sizing: border-box:
+260px (include padding si border) + 32px margin
+= 292px
+
+Valorile se verifica in DevTools, panoul Computed.
+*/

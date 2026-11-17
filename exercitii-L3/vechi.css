@@ -1,0 +1,23 @@
+/* Fragment din CSS-ul unui proiect din anii anteriori */
+h1 { color: #d4af37; font-size: 2.5rem; }
+h2 { color: #d4af37; }
+.price-card h3 { color: #d4af37; }
+.popular-badge { background-color: #d4af37; color: #0d0d0d; }
+button { background-color: #ffbb00; box-shadow: 0 4px 12px rgb(212, 175, 55); }
+
+.typing-text {
+    border-right: 3px solid #d4af37;
+    animation: blink 0.7s step-end infinite;
+}
+@keyframes blink { 50% { border-color: #d4af37; } }
+
+/* … 600 de rânduri mai jos … */
+
+.typing-text {
+    border-right: 3px solid white;
+    animation: blink 1s step-end infinite;
+}
+@keyframes blink { 50% { border-color: transparent; } }
+
+.lightbox { display: none; position: fixed; }   /* în HTML nu există niciun element .lightbox */
+.theme-toggle { position: fixed; top: 20px; }   /* nici .theme-toggle */

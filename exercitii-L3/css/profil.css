@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f1ec;
+  color: #2b2b2b;
+}
+
+main {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  color: #6b3e26;
+  border-bottom: 3px solid #d9a441;
+  padding-bottom: 12px;
+}
+
+.subtitlu {
+  color: #777777;
+  font-style: italic;
+}
+
+.contact {
+  font-weight: bold;
+  text-decoration: none;
+  color: #6b3e26;
+}
+
+.contact:hover {
+  text-decoration: underline;
+}

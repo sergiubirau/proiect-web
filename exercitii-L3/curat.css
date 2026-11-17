@@ -1,0 +1,55 @@
+/* Exercițiul 5 - Cod curat cu variabile */
+
+/* 1. Culoarea aurie este definita o singura data. */
+:root {
+  --auriu: #d4af37;
+}
+
+/* 2. Selectori cu aceeasi declaratie grupati. */
+h1,
+h2,
+.price-card h3 {
+  color: var(--auriu);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+/* 3. Folosirea variabilei pentru fundal. */
+.popular-badge {
+  background-color: var(--auriu);
+  color: #0d0d0d;
+}
+
+/* 4. Pastram culoarea originala a butonului. */
+button {
+  background-color: #ffbb00;
+  box-shadow: 0 4px 12px var(--auriu);
+}
+
+/* 5. Pastram ultima varianta a regulii duplicate. */
+.typing-text {
+  border-right: 3px solid white;
+  animation: blink 1s step-end infinite;
+}
+
+/* 6. Animatia este definita o singura data. */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*
+7. Am eliminat regulile .lightbox si
+.theme-toggle deoarece elementele nu
+exista in HTML.
+
+8. Am eliminat regulile si animatiile duplicate.
+Ultima varianta avea prioritate in CSS-ul original.
+
+9. Am grupat selectorii cu declaratii identice
+si am inlocuit culoarea aurie repetata
+cu variabila --auriu.
+*/

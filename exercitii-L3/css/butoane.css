@@ -1,0 +1,33 @@
+.buton {
+  display: inline-block;
+  background-color: #6b3e26;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: 2px solid #6b3e26;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buton:hover {
+  background-color: #e5c9a8;
+  color: #3b2418;
+}
+
+.buton:focus-visible {
+  outline: 3px solid blue;
+  outline-offset: 3px;
+}
+
+.buton-secundar {
+  background-color: transparent;
+  border-color: #6b3e26;
+  color: #6b3e26;
+}
+
+.buton-secundar:hover {
+  background-color: #6b3e26;
+  color: white;
+}
