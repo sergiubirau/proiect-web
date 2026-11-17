@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #f2ece4;
+}
+main {
+max-width: 1000px;
+margin: 0 auto;
+padding: 24px;
+}
+h1 { color: #6b3e26; }
+/* grila care se adaptează singură */
+.pachete {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 24px;
+}
+/* fiecare pachet: card alb, coloană flex */
+.pachet {
+background-color: #ffffff;
+border: 2px solid transparent;
+border-radius: 12px;
+padding: 24px;
+display: flex;
+flex-direction: column;
+position: relative; /* reper pentru eticheta Popular */
+}
+.pachet h2 {
+margin-top: 0;
+color: #6b3e26;
+}
+.pret {
+font-size: 2rem;
+font-weight: bold;
+margin: 0 0 12px;
+}
+/* butonul coboară la baza cardului */
+.buton {
+margin-top: auto;
+display: block;
+text-align: center;
+background-color: #6b3e26;
+color: #ffffff;
+padding: 12px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+}
+/* pachetul recomandat */
+.recomandat { border-color: #d9a441; }
+.eticheta {
+position: absolute;
+top: -14px; /* puțin în afara cardului */
+right: 16px;
+background-color: #d9a441;
+color: #2b2118;
+padding: 4px 12px;
+border-radius: 999px;
+font-weight: bold;
+font-size: 0.9rem;
+}

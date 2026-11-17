@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+/* subsolul stă jos: body devine o coloană flex */
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+main {
+flex: 1; /* main ia tot spațiul liber, deci footer-ul coboară */
+padding: 20px 40px;
+}
+footer {
+background-color: #6b3e26;
+color: #ffffff;
+padding: 20px 40px;
+}
+/* cele 3 secțiuni pe un rând */
+.coloane {
+display: flex;
+flex-wrap: wrap; /* pe ecran îngust trec una sub alta */
+gap: 24px;
+}
+.coloane section {
+flex: 1 1 200px; /* lățimi egale, minimum ~200px */
+}
+.coloane h3 { margin-top: 0; }
+footer a { color: #d9a441; }
+.copy {
+text-align: center;
+border-top: 1px solid rgb(255 255 255 / 0.25);
+padding-top: 16px;
+margin-bottom: 0;
+}

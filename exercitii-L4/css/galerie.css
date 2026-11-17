@@ -1,0 +1,31 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+main {
+max-width: 1000px;
+margin: 0 auto;
+padding: 24px;
+}
+/* 4 coloane egale, rânduri de 140px */
+.galerie {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-auto-rows: 140px;
+gap: 10px;
+}
+/* imaginile umplu celula fără să se deformeze */
+.galerie img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 8px;
+}
+.mare {
+grid-column: span 2; /* 2 coloane */
+grid-row: span 2; /* 2 rânduri */
+}
+.lata {
+grid-column: span 2; /* 2 coloane */
+}

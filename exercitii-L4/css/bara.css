@@ -1,0 +1,51 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+/* 1. logo, meniu și buton pe un rând, aliniate pe verticală */
+.bara {
+display: flex;
+align-items: center;
+gap: 24px;
+padding: 12px 24px;
+background-color: #ffffff;
+}
+.logo {
+font-size: 1.6rem;
+font-weight: bold;
+color: #6b3e26;
+text-decoration: none;
+}
+.meniu {
+display: flex;
+gap: 18px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.meniu a {
+color: #2b2118;
+text-decoration: none;
+}
+/* 2. butonul împins la dreapta */
+.buton {
+margin-left: auto;
+background-color: #6b3e26;
+color: #ffffff;
+padding: 10px 20px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+}
+/* 3. hero: 300px înălțime, conținut centrat perfect */
+.hero {
+height: 300px;
+display: flex;
+flex-direction: column; /* titlul și textul unul sub altul */
+justify-content: center; /* centrat pe verticală */
+align-items: center; /* centrat pe orizontală */
+background-color: #6b3e26;
+color: #ffffff;
+text-align: center;
+}
+.hero h1 { margin: 0 0 12px; }
